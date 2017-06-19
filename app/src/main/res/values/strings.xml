@@ -1,0 +1,72 @@
+<resources>
+    <!--Home Page -->
+    <string name="app_name">EAT NEAR</string>
+    <string name="show_nearby">SHOW\tNEARBY:</string>
+    <string name="go_button">GO</string>
+    <!-- Menu -->
+    <string name="home_page_menu_wishlist">Wish List</string>
+    <string name="home_page_menu_beento">Been To</string>
+    <string name="home_page_menu_history">History</string>
+    <string name="home_page_menu_settings">Settings</string>
+
+    <string-array name="header_menu_items">
+        <item></item>
+        <item>Wish List</item>
+        <item>Been To</item>
+        <item>History</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="type_prompt">Choose a type</string>
+
+    <string-array name="wait_array">
+        <item>Loading...</item>
+    </string-array>
+    <string name="title_activity_map_page">Map</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="menu_button">MENU</string>
+    <string name="photos_button">PHOTOS</string>
+    <string name="reviews_button">REVIEWS</string>
+    <string name="back_button">BACK</string>
+    <string name="wish_button">WISH</string>
+    <string name="been_button">BEEN?</string>
+    <string name="delete_button">Delete all data</string>
+
+    <string name="loading">Loading...</string>
+    <string name="sorryNoReviews">Sorry there are no reviews for this restaurant...</string>
+
+    <string name="beenToText">You\'ve been to...</string>
+    <string name="historyText">History</string>
+    <string name="wishlistText">WishList</string>
+
+    <!-- HELP PAGE TEXT -->
+    <string name="selectCuisineHelpText">Click below select a cuisine and press GO button to see restaurants nearby.</string>
+    <string name="mapPageHelpText">Use the map to see nearby restaurants. Press a restaurant to see the name. Press the name or icon again to see more details.</string>
+    <string name="restaurantInfoHelpText">Information about the restaurant displayed here.</string>
+    <string name="wishlistButtonHelpText">Press eye to add to wishlist.</string>
+    <string name="beentoButtonHelpText">Press box if you have beento.</string>
+    <string name="buttonsHelpText">Press buttons here to go to specific pages.</string>
+    <string name="menuPageHelpText">Current menu at restaurant. Scroll to see more details.</string>
+    <string name="photosPageHelpText">Photos taken at the restaurant. Scroll to see more.</string>
+    <string name="avgReviewHelpText">Average rating for restaurant.</string>
+    <string name="reviewHelpText">Reviews and ratings. Scroll down to see more.</string>
+    <string name="beentoHelpText">Scroll down to see more restaurants you\'ve been to. Click one to go to the page.</string>
+    <string name="historyHelpText">History. Most recent restaurants views at top. Click one to go to the page.</string>
+    <string name="wishlistHelpText">You\'re wishlist. Scroll down to see more restaurants you wish to go to and click one to go to the page.</string>
+    <string name="helpButtonHelpText">Help button</string>
+    <string name="menuButtonHelpText">Menu button</string>
+    <string name="homeButtonHelpText">Press me to go home</string>
+    <string name="backButtonHelpText">Press me to go back a page</string>
+    <string name="deleteButtonHelpText">Press me to delete data from app</string>
+    <string name="infoHelpText">Information shows how many restaurants are stored in the database for each category</string>
+
+    <!-- Settings page -->
+    <string name="noOfWishlistTxt">No. Wish List: </string>
+    <string name="noOfBeenToTxt">No. Been To: </string>
+    <string name="noOfHistoryTxt">No. History: </string>
+
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_restaurant_info_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1401061.eatnear.RestaurantInfoPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/activity_header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"></include>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/include2"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/restaurantInfoName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="PLACEHOLDER"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="2dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/cast_abc_scrubber_control_to_pressed_mtrl_000" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/restaurantInfoName"
+                    android:layout_alignStart="@+id/restaurantInfoName"
+                    android:layout_below="@+id/restaurantInfoName"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:contextClickable="false"
+                    android:isIndicator="true"
+                    android:longClickable="false"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="0.01" />
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="2dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/cast_abc_scrubber_control_to_pressed_mtrl_000" />
+
+                <TextView
+                    android:id="@+id/restaurantInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper, justo pellentesque iaculis malesuada, augue ante sagittis arcu, dictum luctus mauris enim vel lacus. Praesent suscipit ipsum eu orci luctus, sit amet mollis magna tincidunt. Mauris vel euismod quam, id faucibus metus. Nulla tempor pulvinar ipsum non fringilla. "
+                    android:textColor="@android:color/black" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/horizontalLineBelowScrollView"
+            android:layout_width="300dp"
+            android:layout_height="2dip"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/scrollView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cast_abc_scrubber_control_to_pressed_mtrl_000" />
+
+        <LinearLayout
+            android:id="@+id/WishBeenLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/horizontalLineBelowScrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/wishTxt"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.05"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/wish_button"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/wishlistToggleButton"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.00"
+                android:background="@drawable/check_wishlist"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <CheckBox
+                android:id="@+id/beenCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.29"
+                android:fontFamily="casual"
+                android:text="@string/been_button"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MenuPhotoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WishBeenLayout"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menuButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:fontFamily="casual"
+                android:text="@string/menu_button"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/photosButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/cast_intro_overlay_button_background_color"
+                android:fontFamily="casual"
+                android:text="@string/photos_button"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ReviewBackLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MenuPhotoLayout"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reviewsButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:fontFamily="casual"
+                android:text="@string/reviews_button"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/backButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:fontFamily="casual"
+                android:text="@string/back_button"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

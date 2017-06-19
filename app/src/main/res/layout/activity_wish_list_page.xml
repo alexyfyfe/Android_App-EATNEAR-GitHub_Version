@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wish_list_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1401061.eatnear.WishListPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/include3"
+            layout="@layout/activity_header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/include3"
+                android:layout_weight="1.00">
+
+                <LinearLayout
+                    android:id="@+id/wishlistScrollViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:gravity="center"
+                        android:text="@string/wishlistText"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="@android:color/black"
+                        android:textSize="44sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="300dp"
+                        android:layout_height="2dip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/cast_abc_scrubber_control_to_pressed_mtrl_000" />
+
+                    <View
+                        android:layout_width="300dp"
+                        android:layout_height="2dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/cast_abc_scrubber_control_to_pressed_mtrl_000" />
+
+                    <TableLayout
+                        android:id="@+id/wishlist_tablelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/backButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="175dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:text="@string/back_button"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
